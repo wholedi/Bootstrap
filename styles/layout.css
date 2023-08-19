@@ -1,0 +1,46 @@
+body {
+  position: relative;
+  height: 3000px;
+}
+
+.header {
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 116px;
+  padding: 22px 0;
+  background: rgba(196, 196, 196, 0.1);
+  width: 100vw;
+}
+.header__logo {
+  color: #505050;
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.intro {
+  padding-top: 312px;
+  padding-bottom: 112px;
+  background-image: url("../img/background-photo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  min-height: 737px;
+  max-height: 737px;
+}
+@media screen and (max-width: 1600px) {
+  .intro {
+    background-size: auto 100%;
+  }
+}
+.intro__title {
+  color: #696A86;
+  font-family: DM Serif Display;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 56px */
+}
