@@ -1,0 +1,15 @@
+.btn--custom-primary {
+    background: #9B9BCA;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid transparent;
+}
+.btn--custom-primary:hover {
+    border: 2px solid #9B9BCA;
+    color: #9B9BCA;
+    background: rgba(155, 155, 202, 0.2);
+}
+.btn--custom-lg {
+    padding: 15px 65px;
+}
