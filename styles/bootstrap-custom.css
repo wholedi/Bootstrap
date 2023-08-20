@@ -13,3 +13,33 @@
 .btn--custom-lg {
     padding: 15px 65px;
 }
+
+.header__logo--name {
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #505050;
+    text-decoration: none;
+    padding-right: 160px;
+}
+@media (max-width: 1200px){
+    .header__logo--name {
+        padding-right: 30px;
+    }
+    .nav__paragraph{
+        padding-right: 10px;
+    }
+
+    .btn--custom-lg {
+        padding: 15px 35px;
+    }
+}
+
+.nav__paragraph{
+    color: #717784;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding-right: 58px;
+    text-decoration: none;
+}
