@@ -1,9 +1,14 @@
 :root {
-  --perpel: #9B9BCA;
-  --text-main: #696A86;
-  --text-secondary: #FFF;
-  --icon-background:rgba(200, 200, 200, 1);
-
+  --perpel: rgba(155, 155, 202, 1);
+  --translucent:rgba(196, 196, 196, 0.1);
+  --gray:rgba(200, 200, 200, 1);
+  --dark-grey:rgba(80, 80, 80, 1);
+  --light-gray:rgba(113, 119, 132, 1);
+  --black-green:rgba(98, 103, 128, 1);
+  --text-main: rgba(105, 106, 134, 1);
+  --text-secondary: rgba(255, 255, 255, 1);
+  --text-shadow:rgba(0, 0, 0, 0.25);
+  --custom-border: rgba(155, 155, 202, 0.2);
 
   --text-size-xxxl: 56px;
   --text-size-xxl: 48px;

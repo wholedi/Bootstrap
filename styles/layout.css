@@ -9,8 +9,14 @@ body {
     position: fixed;
     height: 116px;
     padding: 22px 0;
-    background: rgba(196, 196, 196, 0.1);
+    background: var(--translucent);
     width: 100vw;
+}
+
+.header__logo--info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .header__logo {
@@ -18,13 +24,20 @@ body {
     align-items: center;
     justify-content: center;
     color: var(--text-secondary);
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+    text-shadow: 2px 2px 6px var(--text-shadow);
     font-family: "Rammetto One", cursive;
     font-size: var(--text-size-md);
     width: 72px;
     height: 72px;
-    background-color: var(--icon-background);
+    background-color: var(--gray);
     border-radius: 50%;
+}
+
+.header__logo--name {
+    font-family: "Roboto", sans-serif;
+    font-size: var(--text-size-lg);
+    font-weight: 400;
+    color: var(--dark-grey);
 }
 
 .intro {
@@ -38,17 +51,63 @@ body {
     max-height: 737px;
 }
 
+.intro__block{
+    width:750px;
+}
+
+.intro__title {
+    color: var(--text-main);
+    font-family: "DM Serif Display", serif;
+    font-size: var(--text-size-xxxl);
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.intro__subtitle{
+    color: var(--text-main);
+    font-family: "Poppins", sans-serif;
+    font-size: var(--text-size-sm);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px; /* 150% */
+    padding: 30px 0;
+}
+
 @media screen and (max-width: 1600px) {
     .intro {
         background-size: auto 100%;
     }
 }
 
-.intro__title {
-    color: #696A86;
-    font-family: "DM Serif Display", serif;
-    font-size: 56px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 100%; /* 56px */
+@media (max-width: 767px) {
+    .intro {
+        padding-top: 212px;
+        padding-bottom: 12px;
+    }
+
+    .intro__block{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .intro__title{
+        text-align: center;
+    }
+}
+
+@media (max-width: 575px) {
+    .intro {
+        padding-top: 150px;
+    }
+    .intro__title{
+        font-size: var(--text-size-xxl);
+    }
+
+    .intro__subtitle{
+        font-size: var(--text-size-xs);
+    }
+
 }
