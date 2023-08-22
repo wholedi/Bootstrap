@@ -84,6 +84,9 @@
 }
 
 @media (max-width: 576px){
+    .title{
+        text-align: center;
+    }
     .service__subtitle {
         width: 300px;
     }
