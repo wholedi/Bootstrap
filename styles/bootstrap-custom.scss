@@ -18,11 +18,12 @@
   font-size: var(--text-size-sm);
   font-weight: 600;
   border: 2px solid transparent;
-}
-.btn--custom-primary:hover {
-  border: 2px solid var(--perpel);
-  color: var(--perpel);
-  background: var(--custom-border);
+
+  &:hover {
+    border: 2px solid var(--perpel);;
+    color: var(--perpel);;
+    background: var(--custom-border);
+  }
 }
 
 .btn--custom-lg {
@@ -34,9 +35,11 @@
     padding: 15px 35px;
   }
 }
+
 @media (max-width: 992px) {
   .navbar {
     position: relative;
+
   }
   .navbar-collapse {
     position: absolute;
@@ -44,4 +47,3 @@
   }
 }
 
-/*# sourceMappingURL=bootstrap-custom.css.map */

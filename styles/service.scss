@@ -1,0 +1,120 @@
+.service {
+  padding-top: 95px;
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  &__subtitle {
+    width: 730px;
+    text-align: center;
+    padding-top: 12px;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+    gap: 55px;
+    margin-top: 140px;
+  }
+
+  &__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 23px 21px 22px 20px;
+    width: 280px;
+    position: relative;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    overflow: hidden;
+  }
+
+  &__icon:hover {
+    border-color: var(--black-green);
+    transition: border-color 300ms ease-in-out;
+  }
+
+  &__icon:hover .icon__decor {
+    opacity: 1;
+    transition: opacity 300ms ease-in-out;
+  }
+}
+
+.icon {
+  &__title {
+    margin-top: 20px;
+    color: var(--black-green);
+    font-family: "Poppins", sans-serif;
+    font-size: var(--text-size-lg);
+    font-weight: 500;
+  }
+
+  &__subtitle {
+    margin-top: 12px;
+    color: var(--black-green);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: var(--text-size-xs);
+    font-weight: 400;
+  }
+
+  &__decor {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 7px;
+    background-color: var(--border-bottom);
+    border-radius: 0 0 4px 4px;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  font-size: var(--text-size-xl);;
+  font-weight: 500;
+  color: var(--black-green);
+}
+
+.subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: var(--text-size-sm);
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--black-green);
+}
+
+
+@media (max-width: 1400px) {
+  .service__icon-block {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .service{
+
+  &__subtitle {
+    width: 530px;
+  }
+  }
+}
+
+@media (max-width: 576px) {
+  .title {
+    text-align: center;
+  }
+
+  .service__subtitle {
+    width: 300px;
+  }
+}

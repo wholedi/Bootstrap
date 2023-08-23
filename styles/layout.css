@@ -1,113 +1,106 @@
 body {
-    position: relative;
-    height: 3000px;
+  position: relative;
+  height: 3000px;
 }
 
 .header {
-    top: 0;
-    left: 0;
-    position: fixed;
-    height: 116px;
-    padding: 22px 0;
-    background: var(--translucent);
-    width: 100vw;
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 116px;
+  padding: 22px 0;
+  background: var(--translucent);
+  width: 100vw;
 }
-
 .header__logo--info {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
-
 .header__logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-secondary);
-    text-shadow: 2px 2px 6px var(--text-shadow);
-    font-family: "Rammetto One", cursive;
-    font-size: var(--text-size-md);
-    width: 72px;
-    height: 72px;
-    background-color: var(--gray);
-    border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  text-shadow: 2px 2px 6px var(--text-shadow);
+  font-family: "Rammetto One", cursive;
+  font-size: var(--text-size-md);
+  width: 72px;
+  height: 72px;
+  background-color: var(--gray);
+  border-radius: 50%;
 }
-
 .header__logo--name {
-    font-family: "Roboto", sans-serif;
-    font-size: var(--text-size-lg);
-    font-weight: 400;
-    color: var(--dark-grey);
+  font-family: "Roboto", sans-serif;
+  font-size: var(--text-size-lg);
+  font-weight: 400;
+  color: var(--dark-grey);
 }
 
 .intro {
-    padding-top: 312px;
-    padding-bottom: 112px;
-    background-image: url("../img/background-photo.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% auto;
-    min-height: 737px;
-    max-height: 737px;
+  padding-top: 312px;
+  padding-bottom: 112px;
+  background-image: url("../img/background-photo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  min-height: 737px;
+  max-height: 737px;
 }
-
-.intro__block{
-    width:750px;
+.intro__block {
+  width: 750px;
 }
-
 .intro__title {
-    color: var(--text-main);
-    font-family: "DM Serif Display", serif;
-    font-size: var(--text-size-xxxl);
-    font-weight: 400;
-    line-height: 100%;
+  color: var(--text-main);
+  font-family: "DM Serif Display", serif;
+  font-size: var(--text-size-xxxl);
+  font-weight: 400;
+  line-height: 100%;
 }
-
-.intro__subtitle{
-    color: var(--text-main);
-    font-family: "Poppins", sans-serif;
-    font-size: var(--text-size-sm);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 27px; /* 150% */
-    padding: 30px 0;
+.intro__subtitle {
+  color: var(--text-main);
+  font-family: "Poppins", sans-serif;
+  font-size: var(--text-size-sm);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 150% */
+  padding: 30px 0;
 }
 
 @media screen and (max-width: 1600px) {
-    .intro {
-        background-size: auto 100%;
-    }
+  .intro {
+    background-size: auto 100%;
+  }
 }
-
 @media (max-width: 767px) {
-    .intro {
-        padding-top: 212px;
-        padding-bottom: 12px;
-    }
-
-    .intro__block{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        padding: 0 20px;
-    }
-
-    .intro__title{
-        text-align: center;
-    }
+  .intro {
+    padding-top: 212px;
+    padding-bottom: 12px;
+  }
+  .intro__block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .intro__title {
+    text-align: center;
+  }
+  .intro__subtitle {
+    text-align: center;
+  }
 }
-
 @media (max-width: 575px) {
-    .intro {
-        padding-top: 150px;
-    }
-    .intro__title{
-        font-size: var(--text-size-xxl);
-    }
-
-    .intro__subtitle{
-        font-size: var(--text-size-xs);
-    }
-
+  .intro {
+    padding-top: 150px;
+  }
+  .intro__title {
+    font-size: var(--text-size-xxl);
+  }
+  .intro__subtitle {
+    font-size: var(--text-size-xs);
+  }
 }
+
+/*# sourceMappingURL=layout.css.map */
