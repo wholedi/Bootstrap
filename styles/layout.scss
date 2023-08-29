@@ -11,6 +11,7 @@ body {
   padding: 22px 0;
   background: var(--translucent);
   width: 100vw;
+  z-index: 9999;
 
   &__logo--info {
     display: flex;
