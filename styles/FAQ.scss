@@ -14,6 +14,31 @@
     color: var(--brown);
   }
 
+  //accordion first reset border-radius
+  .accordion-item:first-of-type, .accordion-item:first-of-type .accordion-button.collapsed, .accordion-item:first-of-type .accordion-button {
+    border-top-right-radius: 23px;
+    border-top-left-radius: 23px;
+  }
+  //accordion last reset border-radius
+  .accordion-item:last-of-type, .accordion-item:last-of-type .accordion-button.collapsed, .accordion-item:last-of-type .accordion-button {
+    border-bottom-right-radius: 23px;
+    border-bottom-left-radius: 23px;
+  }
+  //accordion active background
+  .accordion-button:not(.collapsed) {
+    background: var(--text-secondary);
+    box-shadow: 0 5px 10px 0 #E0E0E0;
+  }
+  //accordion focused border and box-shadow
+  .accordion-button:focus {
+    border-color: var(--text-secondary);
+    box-shadow: 0 5px 10px 0 #E0E0E0;
+  }
+  //accordion active and focused box-shadow default
+  .accordion-button.collapsed:focus {
+    box-shadow: 0 20px 40px 0 #F5F5FF;
+  }
+
 }
 
 .accordion {
@@ -35,5 +60,16 @@
     line-height: 30px;
     color: var(--brown);
     padding: 25px 35px;
+    border-radius: 23px;
+    box-shadow: 0 20px 40px 0 #F5F5FF;
+  }
+
+  &-body{
+    padding: 40px 35px 60px 35px;
+    color: var(--brown);
+    font-family: "Poppins", sans-serif;
+    font-size: var(--text-size-sm);
+    font-weight: 300;
+    line-height: 30px;
   }
 }
