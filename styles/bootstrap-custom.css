@@ -3,6 +3,9 @@
   align-items: center;
   justify-content: space-between;
 }
+.container--align-end {
+  align-items: flex-end;
+}
 
 .nav__paragraph {
   color: var(--light-gray);
