@@ -1,0 +1,64 @@
+.reviews {
+  margin-top: 167px;
+  margin-bottom: 700px;
+}
+.reviews__block-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+.reviews__block {
+  display: flex;
+  justify-content: center;
+  margin-top: 162px;
+  gap: 100px;
+}
+.reviews__icon-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 442px;
+  height: 545px;
+  background: var(--text-secondary);
+  border-radius: 10px;
+  border: 1px solid #D2D2D2;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.1);
+}
+.reviews__icon-img {
+  margin: 50px 61px 53px 52px;
+}
+.reviews__icon-title {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 100%;
+}
+.reviews__icon-subtitle {
+  color: var(--green);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  padding: 22px 48px 60px 48px;
+}
+.reviews__icon-button {
+  color: var(--text-secondary);
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 10px;
+  background: #9595C9;
+}
+
+.button__red {
+  background: rgb(240, 31, 53);
+}
+
+/*# sourceMappingURL=reviews.css.map */
