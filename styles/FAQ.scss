@@ -3,7 +3,6 @@
   align-items: center;
   flex-direction: column;
   margin-top: 150px;
-  margin-bottom: 180px;
   overflow: hidden;
 
   &__block-left {
@@ -86,6 +85,16 @@
 
 }
 
+.accordion-button::after {
+  background-image: url("../img/icon.png");
+  transform: rotate(-90deg);
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("../img/icon.png");
+  transform: rotate(360deg);
+}
+
 .accordion {
   display: flex;
   flex-direction: column;
@@ -121,7 +130,7 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .container__FAQ {
     display: flex;
     flex-direction: column;
@@ -130,13 +139,22 @@
   }
 
   .FAQ {
+
+    margin-bottom: 500px;
+
     &__block-left {
       width: 100%;
       padding-bottom: 10px;
     }
 
     &__block-right {
+      position: unset;
       width: 100%;
+      margin-top:-96px;
+    }
+
+    &__block-decor {
+      position: relative;
     }
 
     &__accordion {
@@ -144,11 +162,61 @@
     }
 
     &__img {
-      opacity: 0;
+      top: auto;
+      right: 20%;
     }
 
     &__decor {
-      opacity: 0;
+      position: absolute;
+      top: auto;
+      right: auto;
+    }
+
+    &__button {
+      margin-top: 500px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .FAQ {
+
+    &__img{
+      right:10%;
+    }
+
+    &__decor {
+      right: -18%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .FAQ {
+
+    &__img{
+      right:-7%;
+    }
+
+    &__decor {
+      right: -44%;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .FAQ {
+
+    &__button {
+      width:310px;
+    }
+
+    &__img{
+      right:-46%;
+    }
+
+    &__decor {
+      right: -111%;
     }
   }
 }

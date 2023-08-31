@@ -72,7 +72,7 @@
   font-family: "Poppins", sans-serif;
   font-size: var(--text-size-xl);
   font-weight: 500;
-  color: var(--black-green);
+  color: var(--green);
 }
 
 .subtitle {
@@ -80,7 +80,7 @@
   font-size: var(--text-size-sm);
   font-weight: 400;
   line-height: 30px;
-  color: var(--black-green);
+  color: var(--green);
 }
 
 @media (max-width: 1400px) {
