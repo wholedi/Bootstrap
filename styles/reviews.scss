@@ -1,6 +1,9 @@
 .reviews {
+  height: 100%;
   margin-top: 167px;
   margin-bottom: 700px;
+  position: relative;
+
 
   &__block-text {
     display: flex;
@@ -62,10 +65,44 @@
     font-weight: 600;
     border-radius: 10px;
     background: #9595C9;
+  }
 
+  &__decor-img{
+    position:absolute;
+    top: 95%;
+    left: 0;
+  }
+
+  &__decor {
+    position: absolute;
+    top: 33%;
+    left: -33%;
+    width: 1030px;
+    height: 1030px;
+    border-radius: 1030px;
+    background: #FFEDEF;
+    z-index: -1;
   }
 }
 
-.button__red{
+.button__red {
   background: rgba(240, 31, 53, 1);
+}
+
+.feature {
+
+  &__block {
+    display: flex;
+    margin-top: 212px;
+    width: 50%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .reviews{
+    &__block{
+        flex-direction: column;
+        align-items: center;
+    }
+  }
 }

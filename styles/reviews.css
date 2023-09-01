@@ -1,6 +1,8 @@
 .reviews {
+  height: 100%;
   margin-top: 167px;
   margin-bottom: 700px;
+  position: relative;
 }
 .reviews__block-text {
   display: flex;
@@ -56,9 +58,37 @@
   border-radius: 10px;
   background: #9595C9;
 }
+.reviews__decor-img {
+  position: absolute;
+  top: 95%;
+  left: 0;
+}
+.reviews__decor {
+  position: absolute;
+  top: 33%;
+  left: -33%;
+  width: 1030px;
+  height: 1030px;
+  border-radius: 1030px;
+  background: #FFEDEF;
+  z-index: -1;
+}
 
 .button__red {
   background: rgb(240, 31, 53);
+}
+
+.feature__block {
+  display: flex;
+  margin-top: 212px;
+  width: 50%;
+}
+
+@media (max-width: 1200px) {
+  .reviews__block {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=reviews.css.map */
