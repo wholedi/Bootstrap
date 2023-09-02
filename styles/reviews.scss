@@ -1,7 +1,6 @@
 .reviews {
   height: 100%;
   margin-top: 167px;
-  margin-bottom: 700px;
   position: relative;
 
 
@@ -17,6 +16,8 @@
 
   &__block {
     display: flex;
+    position: relative;
+    height: 100%;
     justify-content: center;
     margin-top: 162px;
     gap: 100px;
@@ -72,7 +73,7 @@
     top: 95%;
     left: 0;
   }
-
+  
   &__decor {
     position: absolute;
     top: 33%;
