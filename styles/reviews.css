@@ -81,8 +81,15 @@
 
 .feature__block {
   display: flex;
+  position: relative;
+  flex-direction: column;
+  text-align: center;
+  margin-left: auto;
   margin-top: 212px;
   width: 50%;
+}
+.feature__comment {
+  margin-left: auto;
 }
 
 @media (max-width: 1200px) {
