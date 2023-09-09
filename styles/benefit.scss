@@ -1,9 +1,15 @@
-.benefit{
-  margin-top: 187px ;
+.container__benefit{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
 
-  &__title{
+.benefit {
+  margin-top: 187px;
+
+  &__title {
     color: #402B2B;
-    font-family: "PT Serif" , serif;
+    font-family: "PT Serif", serif;
     font-size: 48px;
     font-weight: 400;
     line-height: 140%;
