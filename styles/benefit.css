@@ -1,3 +1,9 @@
+.container__benefit {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
 .benefit {
   margin-top: 187px;
 }
