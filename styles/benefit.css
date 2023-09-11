@@ -1,9 +1,6 @@
 .benefit {
   margin-top: 187px;
-}
-.benefit__block {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
 }
 .benefit__form {
   display: flex;
